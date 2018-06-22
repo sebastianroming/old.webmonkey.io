@@ -1,0 +1,133 @@
+/**
+ * webmonkey.io stylesheets
+ **/
+html {
+  height: calc(100% - 4px);
+  border-top: 4px solid #002f5f;
+  font-size: calc(100% + .25 * (100vw - 60em)/150);
+}
+
+body {
+  color:#383838;
+  display: flex;
+  flex-direction: column;
+  max-width: 48rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Helvetica,Arial,Ubuntu,sans-serif;
+  line-height: 1.725;
+}
+
+.content {
+  flex:1;
+  margin-top:4rem;
+}
+
+#header {
+  margin: 0 auto 3rem;
+}
+
+#img {
+  background-image: url(src/images/sebastian.png);
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #383838;
+  letter-spacing: .01em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #002f5f;
+  letter-spacing: .01em;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+
+}
+
+#nav {
+  letter-spacing: .01em;
+  font-weight: 600;
+  font-style: normal;
+  font-size: .8rem;
+  margin-top:20px;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 15px;
+}
+
+#nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+  border-right: 1px dotted #383838;
+  vertical-align: middle;
+}
+
+#nav ul li:last-child {
+  margin-right: 0;
+  border-right: 0;
+}
+
+#nav ul li a {
+  margin-right: 15px;
+  color:#383838;
+}
+
+#nav ul li a:hover {
+  transition: 0.3s;
+  color:#002f5f;
+}
+
+#nav ul li:last-child a {
+  margin-right: 0;
+}
+
+footer {
+  position: fixed;
+  bottom:2rem;
+  left:50%;
+  margin:0 auto 0 -25px;
+  text-align:center;
+}
+
+footer #webmonkey {
+  margin:0 auto;
+  text-align:center;
+  font-size: calc(50% + .25 * (100vw - 60em)/150);
+  color: #9B9B9B;
+}
+
+footer #webmonkey svg {
+  width: 50px;
+  height:50px;
+}
